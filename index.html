@@ -1,11 +1,80 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <title>101beee</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Hello, GitHub Pages 👋</h1>
-  <p>이 페이지가 보이면 성공입니다.</p>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="name">Your Name</h1>
+      <div class="subtitle">
+        <div>Seoul National University</div>
+        <div>Autonomous Robot Intelligence Laboratory (ARIL)</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="card-inner">
+        <div class="photo">
+          <!-- assets/profile.jpg 를 넣으면 이미지가 뜸 -->
+          <img src="assets/profile.jpg" alt="Profile photo" />
+        </div>
+
+        <div class="intro">
+          <h2 class="section-title">
+            Welcome to Your Homepage! <span class="wave">👋</span>
+          </h2>
+          <ul class="bullets">
+            <li>
+              I am a graduate student at <b>Seoul National University</b> and a member of
+              the <b>Autonomous Robot Intelligence Laboratory (ARIL)</b>.
+            </li>
+            <li>
+              My research focuses on <b>Non-Line-of-Sight (NLoS)</b> object detection and
+              scene understanding through <b>multi-modal sensor fusion</b> across radar,
+              camera, LiDAR, and acoustic modalities for robust perception in autonomous systems.
+            </li>
+            <li>
+              My broader interests include <b>physics-aware perception and learning</b>,
+              <b>intelligent robotic systems</b>, and <b>human–robot interaction</b>.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-heading"><span class="bar"></span> Education</h2>
+      <ul class="list">
+        <li><b>Seoul National University</b> — Integrated M.S./Ph.D. (2025 – Present)</li>
+        <li><b>Kookmin University</b> — B.S. in Computer Science (2018 – 2024)</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="section-heading"><span class="bar"></span> Research Interests</h2>
+      <ul class="list">
+        <li>Non-Line-of-Sight (NLoS) Object Detection and Scene Understanding</li>
+        <li>Sensor Fusion across Radar, Camera, LiDAR, and Acoustic Modalities</li>
+        <li>Physics-Aware Perception and Learning for Multi-Modal Sensing</li>
+        <li>Intelligent Robotic Systems and Human–Robot Interaction (HRI)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year"></span> Your Name</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

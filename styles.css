@@ -1,0 +1,122 @@
+:root{
+  --blue:#1f5fbf;
+  --text:#1b1f24;
+  --muted:#5b6672;
+  --border:#e6e9ee;
+  --bg:#ffffff;
+  --shadow: 0 6px 20px rgba(0,0,0,.06);
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans KR", sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.55;
+}
+
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.site-header{
+  border-bottom:1px solid var(--border);
+  padding: 28px 0 18px;
+  text-align:center;
+}
+.name{
+  margin:0;
+  font-weight:700;
+  letter-spacing:-.2px;
+  color:var(--blue);
+  font-size: 42px;
+}
+.subtitle{
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.card{
+  margin-top: 32px;
+  border:1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  background:#fff;
+}
+.card-inner{
+  display:flex;
+  gap: 26px;
+  padding: 22px;
+  align-items:flex-start;
+}
+.photo{
+  width: 260px;
+  flex: 0 0 260px;
+}
+.photo img{
+  width:100%;
+  border-radius: 10px;
+  border:1px solid var(--border);
+  display:block;
+  object-fit: cover;
+}
+
+.section-title{
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: var(--blue);
+  font-weight: 750;
+}
+.wave{ font-size: 22px; vertical-align: middle; }
+
+.bullets{
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+.bullets li{ margin: 10px 0; }
+
+.section{
+  margin: 28px 0;
+}
+.section-heading{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  font-size: 26px;
+  margin: 0 0 14px;
+  color: var(--blue);
+  font-weight: 750;
+}
+.bar{
+  width: 6px;
+  height: 28px;
+  background: var(--blue);
+  border-radius: 6px;
+  display:inline-block;
+}
+
+.list{
+  margin: 0;
+  padding-left: 18px;
+}
+.list li{ margin: 10px 0; }
+
+.site-footer{
+  border-top:1px solid var(--border);
+  padding: 18px 0;
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 36px;
+  text-align:center;
+}
+
+/* 반응형 */
+@media (max-width: 860px){
+  .card-inner{ flex-direction: column; }
+  .photo{ width: 100%; flex: none; max-width: 420px; }
+  .name{ font-size: 34px; }
+}
